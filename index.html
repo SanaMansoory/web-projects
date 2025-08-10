@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unit converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+   <h1> unit converter</h1>
+    <div id="container">
+      <div class="container1 hidden">
+        <div id="container2" >
+          <p id="category"> Select Category</p>
+          <select id="options">
+            <option value="" disabled selected></option>
+            <option value="Time">Time</option>
+             <option value="Length">length</option>
+              <option value="Mass">Mass</option>
+               <option value="Temperature">Temperature</option>
+              <option value="Currency">currency</option>
+                 <option value="Speed">speed</option>
+                  <option value="Volume">volume</option>
+            </select>
+        </div>
+        <div class="container3">
+          <div class="container4">
+          <div id="panel1">time</div>
+          <div id="panel2">
+            <div id="box1">
+              <input type="number" placeholder="Enter The Value">
+            </div>
+            <div id="box2">
+              <select id="from" >
+                <option value="" disabled selected>from</option>
+                <optgroup label="Time"class="unit1 hide">
+                <option value="minute">minute</option>
+                <option value="seconds">seconds</option>
+                <option value="hours">hours</option>
+                </optgroup>
+                <optgroup label="Length"class="unit1 hide">
+                <option value="meter">meter</option>
+                <option value="centimeter">centimeter</option>
+                <option value="kilometer">kilometer</option>
+                </optgroup>
+                <optgroup label="Mass"class="unit1 hide">
+                <option value="gram">gram</option>
+                <option value="kilogram">kilogram</option>
+                </optgroup>
+                <optgroup label="Temperature"class="unit1 hide">
+                <option value="kelvin">kelvin</option>
+                <option value="celsius">celsius</option>
+                <option value="farenheit">farenheit</option>
+                </optgroup>
+                <optgroup label="Currency"class="unit1 hide">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                </optgroup>
+                <optgroup label="Speed"class="unit1 hide">
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+                </optgroup>
+                <optgroup label="Volume"class="unit1 hide">
+                <option value="liter">liter</option>
+                <option value="milliliter">milliliter</option>
+                </optgroup>
+             </select>
+            </div>
+            <div id="Icon">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div id="box3">
+              <select id="to">
+                <option value="" disabled selected>to</option>
+                <optgroup label="Time"class="unit2 hide">
+                <option value="minute">minute</option>
+                <option value="seconds">seconds</option>
+                <option value="hours">hours</option>
+                </optgroup>
+                <optgroup label="Length"class="unit2 hide">
+                <option value="meter">meter</option>
+                <option value="centimeter">centimeter</option>
+                <option value="kilometer">kilometer</option>
+                </optgroup>
+                <optgroup label="Mass"class="unit2 hide">
+                <option value="gram">gram</option>
+                <option value="kilogram">kilogram</option>
+                </optgroup>
+                <optgroup label="Temperature"class="unit2 hide">
+                <option value="kelvin">kelvin</option>
+                <option value="celsius">celsius</option>
+                <option value="farenheit">farenheit</option>
+                </optgroup>
+                <optgroup label="Currency"class="unit2 hide">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                </optgroup>
+                <optgroup label="Speed" class="unit2 hide">
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+                </optgroup>
+                <optgroup label="Volume"class="unit2 hide">
+                <option value="liter">liter</option>
+                <option value="milliliter">milliliter</option>
+                </optgroup>
+          </select>
+            </div>
+            <div id="box4">
+              <button id="bttn"> Convert </button>
+            </div>
+            </div>
+            <div id="panel3">
+              <div id="result0">
+                <div id="result1">
+               Result : <span id="result"> </span>
+               </div>
+            </div>
+            </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>     
+</body>
+<script src="script.js"></script>
+</html>
